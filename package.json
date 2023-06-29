@@ -1,0 +1,17 @@
+{
+  "name": "otterbot",
+  "version": "1.8.7",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^16.3.1",
+    "google-images": "^2.1.0",
+    "pm2": "^4.5.6"
+  }
+}
