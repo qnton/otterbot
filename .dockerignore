@@ -1,1 +1,8 @@
 .env
+README.md
+pnpm-lock.yaml
+dockerfile
+.env.sample
+package-lock.json
+.gitignore
+.github/*
