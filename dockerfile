@@ -1,11 +1,14 @@
-FROM node:latest
+FROM node:20-alpine
 
-RUN mkdir -p /usr/src/bot
+ENV NODE_ENV=production
+
 WORKDIR /usr/src/bot
 
-COPY package.json /usr/src/bot
-RUN npm install
+COPY package*.json ./
+RUN npm ci --only=production
 
-COPY . /usr/src/bot
+COPY . .
+
+USER node
 
 CMD ["node", "index.js"]
